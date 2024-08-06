@@ -80,15 +80,15 @@ const Signup = () => {
             </h2>
 
             <div className="flex justify-center space-x-4 mb-1">
-              <div className="step-indicator">
-                <span className="step-number">1</span>
-                <p className="step-title">Personal Details</p>
+              <div className="bg-purple-400 bg-opacity-20 rounded-md">
+                <span className="drop-shadow-lg">1</span>
+                <p className="">Personal Details</p>
               </div>
-              <div className="step-indicator">
+              <div className="step-indicator bg-purple-400 bg-opacity-10">
                 <span className="step-number">2</span>
                 <p className="step-title">Professional Info</p>
               </div>
-              <div className="step-indicator">
+              <div className="step-indicator bg-purple-400 bg-opacity-10">
                 <span className="step-number">3</span>
                 <p className="step-title">Account Security</p>
               </div>
@@ -100,7 +100,7 @@ const Signup = () => {
                   htmlFor="firstName"
                   className="block text-sm font-medium"
                 >
-                  First Name*
+                  First Name<span className='text-red-600'>*</span>
                 </label>
                 <input
                   type="text"
@@ -131,7 +131,7 @@ const Signup = () => {
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium">
-                  Email
+                  Email<span className='text-red-600'>*</span>
                 </label>
                 <input
                   type="email"
@@ -145,7 +145,7 @@ const Signup = () => {
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium">
-                  Password
+                  Password<span className='text-red-600'>*</span>
                 </label>
                 <input
                   type="password"
@@ -172,8 +172,13 @@ const Signup = () => {
                   Sign In
                 </Link>
               </p>
-              <button className="w-full bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded border border-black">
-                Continue with Google
+              <div class="flex items-center justify-center w-full max-w-md">
+                <div class="w-full border-t-2 border-gray-300"></div>
+                <span class="px-3 text-gray-500">Or</span>
+                <div class="w-full border-t-2 border-gray-300"></div>
+              </div>
+              <button className="w-full text-gray-800 font-bold py-2 px-4 rounded border border-black">
+                <img src="/assetes/google.png" className="w-[25px] h-25px inline" alt="" /> Continue with Google
               </button>
             </form>
           </div>
