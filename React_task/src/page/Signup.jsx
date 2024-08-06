@@ -81,16 +81,16 @@ const Signup = () => {
 
             <div className="flex justify-center space-x-4 mb-1">
               <div className="bg-purple-400 bg-opacity-20 rounded-md">
-                <span className="drop-shadow-lg">1</span>
+                <span className="bg-white text-black m-1 p-1">1</span>
                 <p className="">Personal Details</p>
               </div>
-              <div className="step-indicator bg-purple-400 bg-opacity-10">
-                <span className="step-number">2</span>
-                <p className="step-title">Professional Info</p>
+              <div className=" bg-purple-400 bg-opacity-10">
+                <span className="bg-white text-black m-1 p-1">2</span>
+                <p className="">Professional Info</p>
               </div>
-              <div className="step-indicator bg-purple-400 bg-opacity-10">
-                <span className="step-number">3</span>
-                <p className="step-title">Account Security</p>
+              <div className=" bg-purple-400 bg-opacity-10">
+                <span className="bg-white text-black m-1 p-1">3</span>
+                <p className="">Account Security</p>
               </div>
             </div>
 
